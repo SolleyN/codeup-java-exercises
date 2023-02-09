@@ -2,7 +2,7 @@ public class SyntaxLecture {
 
 
     public static void main(String[] args) {
-
+int num1 = 1;
 
 // ================== STATEMENTS (s-3)
 
