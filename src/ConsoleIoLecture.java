@@ -1,9 +1,27 @@
+import java.util.Scanner;
 
 public class ConsoleIoLecture {
 
     public static void main(String[] args) {
 
-        // ================================== print() and println()
+// write a program to get the user age and print out how old they will be in 10 years
+        // import Scanner
+        // create a scanner
+        Scanner scanner = new Scanner(System.in);
+
+        // prompt the user with sout to enter age
+
+        System.out.println("Enter your age: ");
+
+        // get age with scanner nextLine
+
+        String userAge = scanner.nextLine();
+
+        // use sout to print out the user age + 10
+
+        System.out.println(Integer.parseInt(userAge) + 10);
+
+        // ================================== pr10int() and println()
 
         // this:
 //            System.out.println("here");
@@ -48,7 +66,11 @@ public class ConsoleIoLecture {
 
         // ================================== IMPORTS
 
-
+//Scanner sc = new Scanner(System.in);
+//String input = sc.nextLine();
+//        System.out.println("You entered " + input);
+//        String input2 = sc.nextLine();
+//        System.out.println("You also entered" + input2);
 
         // ================================== USER INPUT
 
