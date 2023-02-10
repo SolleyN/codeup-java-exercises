@@ -95,22 +95,66 @@ public class ControlFlowExercises {
 //        5      | 25      | 125
 
         Scanner input = new Scanner(System.in);
-        String result;
+//        String result;
+//        do {
+//            System.out.println("Enter a number");
+//            int number = input.nextInt();
+//            System.out.println("Number\tSquared\tCubed");
+//            System.out.println("======\t======\t======");
+//
+//            for (int num = 1; num <= number; num++) {
+//                System.out.println(num + "\t" + (int) Math.pow(num, 2) + "\t" + (int) Math.pow(num, 3));
+//
+//            }
+//            System.out.println("Do you want to continue? (Y/N): ");
+//            result = input.next();
+//
+//        } while (result.equals("Y"));
+
+//        Convert given number grades into letter grades.
+//
+//                Prompt the user for a numerical grade from 0 to 100.
+//        Display the corresponding letter grade.
+//                Prompt the user to continue.
+//        Assume that the user will enter valid integers for the grades.
+//        The application should only continue if the user agrees to.
+//
+//        Grade Ranges:
+//        A : 100 - 88
+//        B : 87 - 80
+//        C : 79 - 67
+//        D : 66 - 60
+//        F : 59 - 0
+        String continueOn;
         do {
-            System.out.println("Enter a number");
-            int number = input.nextInt();
-            System.out.println("Number\tSquared\tCubed");
-            System.out.println("======\t======\t======");
+            System.out.println("Enter a grade from 0 - 100: ");
 
-            for (int num = 1; num <= number; num++) {
-                System.out.println(num + "\t" + (int) Math.pow(num, 2) + "\t" + (int) Math.pow(num, 3));
+            int numberGrade = input.nextInt();
+            char gradeLetter;
+            if (numberGrade >= 90) {
+                gradeLetter = 'A';
+            }else if (numberGrade = 99 || 100) {
+                gradeLetter ='A';
+            } else if (numberGrade >= 80) {
+                gradeLetter = 'B';
+            } else if (numberGrade >= 70) {
+                gradeLetter = 'C';
+            } else if (numberGrade >= 60) {
+                gradeLetter = 'D';
+            } else
+                gradeLetter = 'F';
 
-            }
-            System.out.println("Do you want to continue? (Y/N): ");
-            result = input.next();
+            System.out.println("The letter grade is: " + gradeLetter);
+            System.out.println("Would you like to enter another grade? (yes/no): ");
+            continueOn = input.next();
 
-        } while (result.equals("Y"));
+        } while (continueOn.equalsIgnoreCase("yes"));
+
+        System.out.println("Have a wonderful rest of your day!");
+
+
     }
+
 }
 
 
