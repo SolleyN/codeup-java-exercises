@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
 
 
@@ -47,18 +49,68 @@ public class ControlFlowExercises {
 //    System.out.println(i);
 
 
-
 //        Write a program that prints the numbers from 1 to 100.
 //        For multiples of three: print “Fizz” instead of the number.
 //        For the multiples of five: print “Buzz”.
 //        For numbers which are multiples of both three and five: print “FizzBuzz”.
 
-        int num = 1;
- do {
+//        for (int num = 1; num <= 100; num++) {
+//            if (num % 3 == 0 && num % 5 == 0) {
+//                System.out.println("FizzBuzz");
+//
+//            } else if (num % 3 == 0) {
+//                System.out.println("Fizz");
+//
+//            } else if (num % 5 == 0) {
+//                System.out.println("Buzz");
+//            } else {
+//                System.out.println(num);
+//
+//
+//
+//            }
+//
+//        }
 
- }while ()
-        System.out.println();
-    }
+//        Display a table of powers.
+//
+//                Prompt the user to enter an integer.
+//        Display a table of squares and cubes from 1 to the value entered.
+//        Ask if the user wants to continue.
+//        Assume that the user will enter valid data.
+//        Only continue if the user agrees to.
+//
+//        Example Output
+//
+//        What number would you like to go up to? 5
+//
+//        Here is your table!
+//
+//        number | squared | cubed
+//        ------ | ------- | -----
+//        1      | 1       | 1
+//        2      | 4       | 8
+//        3      | 9       | 27
+//        4      | 16      | 64
+//        5      | 25      | 125
 
+        Scanner input = new Scanner(System.in);
+        String result;
+        do {
+            System.out.println("Enter a number");
+            int number = input.nextInt();
+            System.out.println("Number\tSquared\tCubed");
+            System.out.println("======\t======\t======");
+
+            for (int num = 1; num <= number; num++) {
+                System.out.println(num + "\t" + (int) Math.pow(num, 2) + "\t" + (int) Math.pow(num, 3));
+
+            }
+            System.out.println("Do you want to continue? (Y/N): ");
+            result = input.next();
+
+        } while (result.equals("Y"));
     }
+}
+
 
