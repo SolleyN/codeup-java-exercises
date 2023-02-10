@@ -38,7 +38,7 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //        }
 
-//        int num = 2;
+//        long num = 2;
 //        do {
 //            System.out.println(num);
 //            num *=  2;
@@ -65,10 +65,7 @@ public class ControlFlowExercises {
 //                System.out.println("Buzz");
 //            } else {
 //                System.out.println(num);
-//
-//
-//
-//            }
+//                }
 //
 //        }
 
@@ -125,27 +122,40 @@ public class ControlFlowExercises {
 //        C : 79 - 67
 //        D : 66 - 60
 //        F : 59 - 0
+
         String continueOn;
+        String gradeLetter;
+
         do {
+
             System.out.println("Enter a grade from 0 - 100: ");
 
             int numberGrade = input.nextInt();
-            char gradeLetter;
-            if (numberGrade >= 90) {
-                gradeLetter = 'A';
-            }else if (numberGrade = 99 || 100) {
-                gradeLetter ='A';
+
+            if (numberGrade >= 99) {
+                gradeLetter = "A+";
+            } else if (numberGrade >= 90) {
+                gradeLetter = "A";
+            } else if (numberGrade >= 89) {
+                gradeLetter = "B+";
             } else if (numberGrade >= 80) {
-                gradeLetter = 'B';
+                gradeLetter = "B";
+            } else if (numberGrade >= 79) {
+                gradeLetter = "C+";
             } else if (numberGrade >= 70) {
-                gradeLetter = 'C';
+                gradeLetter = "C";
+            } else if (numberGrade >= 69) {
+                gradeLetter = "D+";
             } else if (numberGrade >= 60) {
-                gradeLetter = 'D';
-            } else
-                gradeLetter = 'F';
+                gradeLetter = "D";
+            } else {
+                gradeLetter = "F";
+            }
 
             System.out.println("The letter grade is: " + gradeLetter);
+
             System.out.println("Would you like to enter another grade? (yes/no): ");
+
             continueOn = input.next();
 
         } while (continueOn.equalsIgnoreCase("yes"));
