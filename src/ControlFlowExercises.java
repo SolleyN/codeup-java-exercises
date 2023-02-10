@@ -92,21 +92,22 @@ public class ControlFlowExercises {
 //        5      | 25      | 125
 
         Scanner input = new Scanner(System.in);
-//        String result;
-//        do {
-//            System.out.println("Enter a number");
-//            int number = input.nextInt();
-//            System.out.println("Number\tSquared\tCubed");
-//            System.out.println("======\t======\t======");
-//
-//            for (int num = 1; num <= number; num++) {
-//                System.out.println(num + "\t" + (int) Math.pow(num, 2) + "\t" + (int) Math.pow(num, 3));
-//
-//            }
-//            System.out.println("Do you want to continue? (Y/N): ");
-//            result = input.next();
-//
-//        } while (result.equals("Y"));
+        String result;
+        do {
+            System.out.println("Enter a number");
+            int number = input.nextInt();
+            System.out.println("Number | Squared | Cubed\n------ | ------| ------");
+
+
+
+            for (int num = 1; num <= number; num++) {
+                System.out.println(num +"      |" + (int) Math.pow(num, 2) + "        |" + (int) Math.pow(num, 3));
+
+            }
+            System.out.println("Do you want to continue? (Y/N): ");
+            result = input.next();
+
+        } while (result.equals("Y"));
 
 //        Convert given number grades into letter grades.
 //
