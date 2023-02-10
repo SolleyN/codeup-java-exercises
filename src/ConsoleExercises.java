@@ -6,6 +6,7 @@ public class ConsoleExercises {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
+//        input.useDelimter("\n");
 
 //        double pi = 3.14159;
 // System.out.printf("The value of pi is approximately: %s",(int)(pi * 100) /100.0);
@@ -52,6 +53,7 @@ public class ConsoleExercises {
         double width = Double.parseDouble(input.nextLine());
         double area = width * length;
         double perimeter = (width * 2 + length * 2);
+//        double volume = ();
         System.out.printf("The area of the classroom is: %d\n", area);
         System.out.printf("The perimeter of the classroom is: %d\n", perimeter);
 
