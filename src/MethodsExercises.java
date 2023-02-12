@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
 
     // All arithmetic methods go into the main method
@@ -35,6 +37,10 @@ public class MethodsExercises {
         int result5 = modulus(420, 69);
         System.out.println("The modulus is: " + result5);
 
+        int userInputNum = getInteger(1, 10);
+
+        System.out.println("You entered in :" + userInputNum);
+
 
     }
 
@@ -70,5 +76,23 @@ public class MethodsExercises {
             return 0;
         }
         return x + multiplyRecursion(x, y - 1);
+    }
+
+    public static int getInteger(int min, int max) {
+        Scanner input = new Scanner(System.in);
+        int number = 0;
+
+        for (; ; ) {
+            System.out.println("Enter a number between " + min" and " + max":");
+        } if (input.hasNext()) ;
+        number = input.nextInt();
+        if (number >= min && number <= max) {
+            break;
+
+    } else {
+            input.next();
+        }
+
+
     }
 }
