@@ -1,8 +1,10 @@
 public class Person {
     private String name;
-public Person(String name){
-    this.name = name;
-}
+
+    public Person(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -13,10 +15,9 @@ public Person(String name){
 
     }
 
-       public void sayHello(){
-           System.out.println("Hello, my name is " + name);
-        }
-
+    public void sayHello() {
+        System.out.println("Hello, my name is " + name);
+    }
 
 
     public static void main(String[] args) {
@@ -24,13 +25,13 @@ public Person(String name){
         person.sayHello();
 
 
-        person.setName("Jane");
+        person.setName("Sully");
         person.sayHello();
 
         String name = person.getName();
         System.out.println("The person's name is " + name);
 
     }
-    }
+}
 
 
