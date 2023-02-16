@@ -226,6 +226,8 @@ public class ArraysLecture {
             sum += number;
         }
         System.out.println("Your sum is :" + sum);
+
+
     }
 
 }
