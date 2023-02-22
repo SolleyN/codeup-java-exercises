@@ -1,4 +1,5 @@
 package grades;
+
 import java.util.ArrayList;
 
 public class Student {
@@ -10,15 +11,17 @@ public class Student {
         this.name = name;
         this.grades = new ArrayList<Integer>();
     }
-public String getName() {
+
+    public String getName() {
         return this.name;
 
     }
+
     public void addGrade(int grade) {
-this.grades.add(grade);
+        this.grades.add(grade);
     }
 
-public double getGradeAverage() {
+    public double getGradeAverage() {
         if (this.grades.size() == 0) {
             return 0;
         }
@@ -27,5 +30,5 @@ public double getGradeAverage() {
             sum += grade;
         }
         return (double) sum / this.grades.size();
-}
+    }
 }
