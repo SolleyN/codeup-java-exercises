@@ -3,8 +3,6 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-
-
     private Scanner scanner;
 
     public Input() {
@@ -25,13 +23,12 @@ public class Input {
     public int getInt(int min, int max) {
         int number = getInt();
         while (number < min || number > max) {
-        System.out.printf("Please enter an integer between %d and %d ", min, max);
-        number = getInt();
+            System.out.printf("Please enter an integer between %d and %d ", min, max);
+            number = getInt();
+        }
+        return number;
+    }
 
-    } return number;
-
-
-}
     public int getInt() {
         while (!scanner.hasNextInt()) {
             scanner.nextLine();
@@ -43,11 +40,10 @@ public class Input {
 
     public double getDouble(double min, double max) {
         double number = getDouble();
-        while (number < min || number > max);
-         {
+        while (number < min || number > max) ;
+        {
             System.out.printf("Please enter a decimal between %.2f and %.2f: ", min, max);
             number = getDouble();
-
         }
         return number;
 
